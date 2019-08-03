@@ -3,7 +3,7 @@
 Python Practical Template
 Keegan Crankshaw
 Readjust this Docstring as follows:
-Names: <names>
+Names: <>
 Student Number: <studnum>
 Prac: <Prac Num>
 Date: <dd/mm/yyyy>
