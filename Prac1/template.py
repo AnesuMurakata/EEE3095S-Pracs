@@ -5,8 +5,8 @@ Keegan Crankshaw
 Readjust this Docstring as follows:
 Names: <Anesu Murakata>
 Student Number: <studnum>
-Prac: <Prac Num>
-Date: <dd/mm/yyyy>
+Prac: <Prac 1>
+Date: <3/8/2019>
 """
 
 # import Relevant Librares
