@@ -52,19 +52,19 @@ def main():
 
 # Only run the functions if 
 if __name__ == "__main__":
-	# Make sure the GPIO is stopped correctly
+	#Check that GPIO is stopped correctly
 	try:
-		#initialising mode out of main loop so it does not iterate	
+		#Using BOARD numbering system	
 		GPIO.setmode(GPIO.BOARD)
 		
-		 #list of GPIO set to output
+		#Setup input channels to be used
+		GPIO.setup(inputList, GPIO.IN)
+		GPIO.setup(inputList, GPIO.IN, pull_up_down=GPIO.PUD_UP)		
+		
+		#Setup output channel to be used
 		GPIO.setup(outputList, GPIO.OUT, initial=GPIO.LOW)
 	
-		#List of GPIO set to input
-		GPIO.setup(inputList, GPIO.IN)
-		GPIO.setup(inputList, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-	
-		#add edge detection and debouncing, out of loop to avoid error 
+		#add rising edge detection and debouncing to the input ports 
 		GPIO.add_event_detect(29, GPIO.RISING, bouncetime=200)
 		GPIO.add_event_detect(31, GPIO.RISING, bouncetime=200)
 
