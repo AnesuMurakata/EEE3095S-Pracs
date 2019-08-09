@@ -1,4 +1,4 @@
-# EEE3096S
+# EEE3095S
 Practical content for my final year EEE3095S Embedded Systems II Course at the University of Cape Town
 
 ## Prac 0
